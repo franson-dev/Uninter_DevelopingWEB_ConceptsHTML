@@ -73,6 +73,66 @@
         <input type="reset" value="Limpar">
     </form>
 
+    <form action="" method="POST">
+
+        <!-- Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" size="50" maxlength="50">
+        <br><br>
+
+        <!-- Senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" size="8" maxlength="8">
+        <br><br>
+
+        <!-- Checkbox -->
+        <fieldset>
+            <legend>Linguagens que tem interesse</legend>
+
+            <input type="checkbox" name="linguagem[]" value="c++"> C++
+            <br>
+
+            <input type="checkbox" name="linguagem[]" value="php"> PHP
+            <br>
+
+            <input type="checkbox" name="linguagem[]" value="delphi"> Delphi
+            <br>
+        </fieldset>
+
+        <br>
+
+        <!-- Radio -->
+        <fieldset>
+            <legend>Linguagem que irá cursar agora</legend>
+
+            <input type="radio" name="curso" value="c++"> C++
+            <br>
+
+            <input type="radio" name="curso" value="php"> PHP
+            <br>
+
+            <input type="radio" name="curso" value="delphi"> Delphi
+            <br>
+        </fieldset>
+
+        <br>
+
+        <!-- Select -->
+        <label for="escolha">Escolha uma linguagem:</label>
+
+        <select name="escolha">
+            <option value="c++">C++</option>
+            <option value="php">PHP</option>
+            <option value="delphi">Delphi</option>
+        </select>
+
+        <br><br>
+
+        <!-- Botão -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
 </body>
 
 </html>
