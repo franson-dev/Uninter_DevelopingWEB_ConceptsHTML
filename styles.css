@@ -1,0 +1,115 @@
+/* TEMA 1 - CASCADING STYLE SHEETS (CSS) */
+/* CSS is used to style HTML elements */
+
+/* TEMA 2 - CSS COMENTÁRIOS, CORES, FUNDO, BORDAS, MARGEM E PREENCHIMENTO */
+
+/* Comentários em CSS usam /* */ */
+
+body {
+    /* Cores */
+    color: #333333;
+    background-color: #f5f5f5;
+    
+    /* Fundo com imagem */
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    /* Margem e Preenchimento */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    /* Bordas */
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    
+    /* Margem */
+    margin: 20px auto;
+    /* Preenchimento */
+    padding: 15px;
+}
+
+/* TEMA 3 - WIDTH, HEIGHT, FORMATAÇÃO DE TEXTO/FONTE, BOX MODEL */
+
+.box {
+    width: 300px;
+    height: 150px;
+    
+    /* Formatação de Fonte */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+    
+    /* Box Model */
+    box-sizing: border-box;
+}
+
+/* TEMA 4 - FLOAT, CLEAR, ELEMENTOS BLOCK E INLINE */
+
+.float-left {
+    float: left;
+    width: 45%;
+}
+
+.float-right {
+    float: right;
+    width: 45%;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Elementos Block */
+.block-element {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Elementos Inline */
+.inline-element {
+    display: inline;
+    margin: 0 5px;
+}
+
+/* TEMA 5 - DISPLAY, POSITION, Z-INDEX */
+
+.positioned {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
