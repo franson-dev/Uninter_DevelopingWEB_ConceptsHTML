@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -16,117 +16,124 @@
         <button id="themeToggle" class="theme-btn">Trocar tema</button>
     </div>
 
-    <h1>Título H1</h1>
-    <h2>Título H2</h2>
-    <h3>Título H3</h3>
-    <h4>Título H4</h4>
-    <h5>Título H5</h5>
-    <h6>Título H6</h6>
+    <h1 class="bg-primary p-2 m-2 border-lg text-center font-3xl font-bold">Título H1</h1>
+    <h2 class="bg-primary p-2 m-2 border-lg text-center font-2xl font-semibold">Título H2</h2>
+    <h3 class="border-accent p-2 m-2 text-left font-xl font-bold">Título H3</h3>
+    <h4 class="border-solid p-2 m-2 text-center font-lg font-semibold">Título H4</h4>
+    <h5 class="border-sm p-1 m-2 text-right font-md font-normal">Título H5</h5>
+    <h6 class="p-1 m-2 text-left font-sm italic">Título H6</h6>
 
-    <h2>Lista Não Ordenada</h2>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
+    <h2 class="bg-primary p-2 m-2 text-left font-xl font-bold">Lista Não Ordenada</h2>
+    <ul class="box-theme text-left font-md leading-relaxed">
+        <li>Item 1 - Estilo normal</li>
+        <li><span class="font-bold">Item 2</span> - Em negrito</li>
+        <li><span class="italic">Item 3</span> - Em itálico</li>
     </ul>
 
-    <h2>Lista Ordenada</h2>
-    <ol>
-        <li>Primeiro item</li>
-        <li>Segundo item</li>
-        <li>Terceiro item</li>
+    <h2 class="bg-primary p-2 m-2 text-right font-xl font-bold">Lista Ordenada</h2>
+    <ol class="box-theme text-justify font-md font-serif leading-normal">
+        <li>Primeiro item em fonte Serif</li>
+        <li><span class="underline">Segundo item</span> sublinhado</li>
+        <li><span class="line-through">Terceiro item</span> com linha</li>
     </ol>
 
 
-    <a href="https://example.com">Link</a>
+    <div class="box-theme p-2 m-2 text-center">
+        <a href="https://example.com" class="border-accent p-1 font-lg font-bold underline">Link em Destaque</a>
+    </div>
 
-    <img src="https://via.placeholder.com/300" alt="Exemplo de imagem">
+    <div class="box-theme p-2 m-2" style="text-align:center">
+        <p class="font-sm italic" style="margin:10px 0">Legenda da imagem em itálico</p>
+        <img src="data:image/jpeg;base64,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" alt="Exemplo de imagem">
+    </div>
 
-    <h2>Tabela</h2>
-    <table border="1">
-        <tr>
-            <th>Coluna 1</th>
-            <th>Coluna 2</th>
-            <th>Coluna 3</th>
-        </tr>
-        <tr>
-            <td>Dados 1</td>
-            <td>Dados 2</td>
-            <td>Dados 3</td>
-        </tr>
-        <tr>
-            <td>Dados 4</td>
-            <td>Dados 5</td>
-            <td>Dados 6</td>
-        </tr>
-    </table>
+    <h2 class="bg-primary p-2 m-2 text-center font-xl font-bold">Tabela</h2>
+    <div class="box-theme m-2">
+        <table border="1" class="border-accent text-center font-md">
+            <tr class="bg-primary">
+                <th class="p-1 font-bold">Coluna 1</th>
+                <th class="p-1 font-bold font-sans">Coluna 2</th>
+                <th class="p-1 font-bold font-mono">Coluna 3</th>
+            </tr>
+            <tr>
+                <td class="p-1 text-left font-serif">Dados 1</td>
+                <td class="p-1 text-center">Dados 2</td>
+                <td class="p-1 text-right font-mono">Dados 3</td>
+            </tr>
+            <tr>
+                <td class="p-1 italic"><u>Dados 4</u></td>
+                <td class="p-1 font-bold">Dados 5</td>
+                <td class="p-1 line-through">Dados 6</td>
+            </tr>
+        </table>
+    </div>
 
-    <h2>Formulário</h2>
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+    <h2 class="bg-primary p-2 m-2 text-left font-xl font-bold">Formulário</h2>
+    <form class="box-theme p-3 m-2">
+        <label for="nome" class="m-1 font-md font-semibold">Nome:</label>
+        <input type="text" id="nome" name="nome" required class="p-1 m-1 border-solid" placeholder="Digite seu nome">
         <br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email" class="m-1 font-md font-semibold">Email:</label>
+        <input type="email" id="email" name="email" required class="p-1 m-1 border-solid" placeholder="seu@email.com">
         <br><br>
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+        <label for="mensagem" class="m-1 font-md font-semibold">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" class="p-1 m-1 border-solid font-md" placeholder="Digite sua mensagem aqui..."></textarea>
         <br><br>
 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar" class="bg-primary p-2 border-none text-center font-bold" style="cursor:pointer;border:none;border-radius:4px;color:#fff">
+        <input type="reset" value="Limpar" class="bg-dark p-2 text-center" style="cursor:pointer;border:none;border-radius:4px;color:var(--bg);margin-left:8px">
     </form>
 
-    <form action="" method="POST">
+    <form action="" method="POST" class="box-theme p-3 m-2">
 
         <!-- Nome -->
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" placeholder="Digite seu nome" size="50" maxlength="50">
+        <label for="nome" class="m-1 font-md font-bold">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" size="50" maxlength="50" class="p-1 m-1 border-solid">
         <br><br>
 
         <!-- Senha -->
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" size="8" maxlength="8">
+        <label for="senha" class="m-1 font-md font-bold">Senha:</label>
+        <input type="password" name="senha" size="8" maxlength="8" class="p-1 m-1 border-solid">
         <br><br>
 
         <!-- Checkbox -->
-        <fieldset>
-            <legend>Linguagens que tem interesse</legend>
+        <fieldset class="border-accent p-2 m-1">
+            <legend class="bg-primary p-1 font-semibold text-center">Linguagens que tem interesse</legend>
 
-            <input type="checkbox" name="linguagem[]" value="c++"> C++
+            <input type="checkbox" name="linguagem[]" value="c++"> <span class="font-md">C++</span>
             <br>
 
-            <input type="checkbox" name="linguagem[]" value="php"> PHP
+            <input type="checkbox" name="linguagem[]" value="php"> <span class="font-md">PHP</span>
             <br>
 
-            <input type="checkbox" name="linguagem[]" value="delphi"> Delphi
+            <input type="checkbox" name="linguagem[]" value="delphi"> <span class="font-md">Delphi</span>
             <br>
         </fieldset>
 
         <br>
 
         <!-- Radio -->
-        <fieldset>
-            <legend>Linguagem que irá cursar agora</legend>
+        <fieldset class="border-accent p-2 m-1">
+            <legend class="bg-primary p-1 font-semibold text-center">Linguagem que irá cursar agora</legend>
 
-            <input type="radio" name="curso" value="c++"> C++
+            <input type="radio" name="curso" value="c++"> <span class="font-md">C++</span>
             <br>
 
-            <input type="radio" name="curso" value="php"> PHP
+            <input type="radio" name="curso" value="php"> <span class="font-md">PHP</span>
             <br>
 
-            <input type="radio" name="curso" value="delphi"> Delphi
+            <input type="radio" name="curso" value="delphi"> <span class="font-md">Delphi</span>
             <br>
         </fieldset>
 
         <br>
 
         <!-- Select -->
-        <label for="escolha">Escolha uma linguagem:</label>
+        <label for="escolha" class="m-1 font-md font-bold">Escolha uma linguagem:</label>
 
-        <select name="escolha">
+        <select name="escolha" class="p-1 m-1 border-solid font-md">
             <option value="c++">C++</option>
             <option value="php">PHP</option>
             <option value="delphi">Delphi</option>
@@ -135,24 +142,24 @@
         <br><br>
 
         <!-- Botão -->
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" class="bg-primary p-2 text-center font-bold" style="cursor:pointer;border:none;border-radius:4px;color:#fff;width:100px">
 
     </form>
 
-        <script>
-            (function(){
-                const btn = document.getElementById('themeToggle');
-                const themes = ["", "dark", "colorful"];
-                let i = 0;
-                btn.addEventListener('click', ()=>{
-                    i = (i + 1) % themes.length;
-                    const t = themes[i];
-                    if(t) document.body.setAttribute('data-theme', t);
-                    else document.body.removeAttribute('data-theme');
-                });
-            })();
-        </script>
+    <script>
+        (function () {
+            const btn = document.getElementById('themeToggle');
+            const themes = ["", "dark", "colorful"];
+            let i = 0;
+            btn.addEventListener('click', () => {
+                i = (i + 1) % themes.length;
+                const t = themes[i];
+                if (t) document.body.setAttribute('data-theme', t);
+                else document.body.removeAttribute('data-theme');
+            });
+        })();
+    </script>
 
-    </body>
+</body>
 
-    </html>
+</html>

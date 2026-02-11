@@ -3,6 +3,7 @@
 
 /* TEMA 2 - CSS COMENTÁRIOS, CORES, FUNDO, BORDAS, MARGEM E PREENCHIMENTO */
 
+/* Variáveis para fundo, bordas, margem e preenchimento com suporte a temas */
 
 :root{
     --bg: #f5f5f5;
@@ -21,6 +22,54 @@ body{
     margin: 0;
     padding: 20px;
 }
+
+/* FUNDO, BORDAS, MARGEM E PREENCHIMENTO - Implementação com suporte a temas */
+
+/* Fundo com classe temática */
+.bg-primary{
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.bg-light{background-color: var(--bg)}
+.bg-dark{background-color: var(--text);color:var(--bg)}
+
+/* Bordas com suporte a temas */
+.border-solid{border: 2px solid var(--border);border-radius:4px}
+.border-accent{border: 2px solid var(--accent);border-radius:4px}
+.border-sm{border: 1px solid var(--border)}
+.border-lg{border: 3px solid var(--accent)}
+
+/* Margem - classes utilitárias */
+.m-0{margin:0}
+.m-1{margin:8px}
+.m-2{margin:16px}
+.m-3{margin:24px}
+
+.my-1{margin:8px 0}
+.my-2{margin:16px 0}
+.mx-auto{margin:0 auto}
+
+/* Preenchimento - classes utilitárias */
+.p-0{padding:0}
+.p-1{padding:8px}
+.p-2{padding:16px}
+.p-3{padding:24px}
+
+.px-2{padding:0 16px}
+.py-2{padding:16px 0}
+
+/* Box com estilo temático */
+.box-theme{
+    border: 2px solid var(--accent);
+    background-color: var(--bg);
+    color: var(--text);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    transition: all 250ms ease;
+}
+
 
 .container {
     /* Bordas */
@@ -145,11 +194,52 @@ input, textarea, select{
     padding:6px 8px;
 }
 
+/* TEMA 6 - ALINHAMENTO DE TEXTO, FONTE E ESTILOS */
+
+/* Alinhamento de Texto */
+.text-left{text-align:left}
+.text-center{text-align:center}
+.text-right{text-align:right}
+.text-justify{text-align:justify}
+
+/* Tamanho de Fonte */
+.font-xs{font-size:12px}
+.font-sm{font-size:14px}
+.font-md{font-size:16px}
+.font-lg{font-size:18px}
+.font-xl{font-size:20px}
+.font-2xl{font-size:24px}
+.font-3xl{font-size:28px}
+
+/* Peso de Fonte */
+.font-light{font-weight:300}
+.font-normal{font-weight:400}
+.font-semibold{font-weight:600}
+.font-bold{font-weight:700}
+.font-900{font-weight:900}
+
+/* Estilo de Fonte */
+.italic{font-style:italic}
+.not-italic{font-style:normal}
+.underline{text-decoration:underline}
+.line-through{text-decoration:line-through}
+
+/* Família de Fonte */
+.font-serif{font-family:'Georgia', 'Times New Roman', serif}
+.font-sans{font-family:'Arial', 'Helvetica', sans-serif}
+.font-mono{font-family:'Courier New', 'Monospace'}
+
+/* Altura de Linha */
+.leading-tight{line-height:1.2}
+.leading-normal{line-height:1.5}
+.leading-relaxed{line-height:1.8}
+
 /* Temas alternáveis */
 [data-theme="dark"]{
     --bg: #111111;
     --text: #eeeeee;
     --accent: #ff7b7b;
+    --border: rgba(255,255,255,0.12);
 }
 
 [data-theme="colorful"]{
