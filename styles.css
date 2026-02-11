@@ -3,26 +3,28 @@
 
 /* TEMA 2 - CSS COMENTÁRIOS, CORES, FUNDO, BORDAS, MARGEM E PREENCHIMENTO */
 
-/* Comentários em CSS usam /* */ */
 
-body {
-    /* Cores */
-    color: #333333;
-    background-color: #f5f5f5;
-    
-    /* Fundo com imagem */
+:root{
+    --bg: #f5f5f5;
+    --text: #222222;
+        --accent: #007bff;
+        --border: rgba(0,0,0,0.12);
+}
+
+body{
+    color: var(--text);
+    background-color: var(--bg);
+        transition: background-color 250ms ease, color 250ms ease, border-color 250ms ease;
     background-image: url('image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    
-    /* Margem e Preenchimento */
     margin: 0;
     padding: 20px;
 }
 
 .container {
     /* Bordas */
-    border: 2px solid #007bff;
+        border: 2px solid var(--accent);
     border-radius: 8px;
     
     /* Margem */
@@ -112,4 +114,72 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+}
+
+/* Ensure common text elements follow the theme text color */
+h1,h2,h3,h4,h5,h6,p,li,label,button,input,textarea,select,option{
+    color: var(--text);
+    transition: color 250ms ease;
+}
+
+/* Make headings more visibly colored using the accent color */
+h1,h2,h3,h4,h5,h6{
+    color: var(--accent);
+}
+
+/* Links use accent */
+a{
+    color: var(--accent);
+}
+a:hover{opacity:0.85}
+
+/* Tables and form controls adapt to theme */
+table{color:var(--text);border-collapse:collapse}
+table, th, td{border:1px solid var(--border)}
+th, td{padding:8px}
+
+input, textarea, select{
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding:6px 8px;
+}
+
+/* Temas alternáveis */
+[data-theme="dark"]{
+    --bg: #111111;
+    --text: #eeeeee;
+    --accent: #ff7b7b;
+}
+
+[data-theme="colorful"]{
+    --bg: linear-gradient(135deg,#ffefd5 0%, #ffe4e1 50%, #e6e6fa 100%);
+    /* when using gradient as bg variable, fallback color: */
+    --bg-fallback: #fff8f0;
+    --text: #1b1b3a;
+    --accent: #ff6f61;
+}
+
+/* Header/button styles for theme toggle */
+.theme-bar{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 200;
+}
+.theme-btn{
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.theme-btn:focus{outline:2px solid rgba(0,0,0,0.15)}
+
+/* If using colorful theme with gradient, apply it to body */
+body[data-theme="colorful"]{
+    background-image: none;
+    background: var(--bg);
+    background-color: var(--bg-fallback);
 }
